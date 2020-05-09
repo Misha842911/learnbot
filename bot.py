@@ -14,7 +14,7 @@ def greet_user(bot, update):
     update.message.reply_text(text)
 
 def talk_to_me(bot, update):
-    user_text = "Hello {}! You wrote: {}".format(update.message.chat.first_name, update.message.text)
+    user_text = "Hello {}! You wrote the text: {}".format(update.message.chat.first_name, update.message.text)
     logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username, 
                 update.message.chat.id, update.message.text)
     update.message.reply_text(user_text)
